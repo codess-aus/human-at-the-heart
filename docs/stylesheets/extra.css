@@ -76,11 +76,18 @@ body, .md-typeset {
 /* Card grid ----------------------------------------------------------------- */
 .chapter-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(420px, 100%), 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
+  gap: 1.25rem;
   margin: 1.5rem 0 3rem;
   list-style: none;
   padding: 0;
+}
+
+.md-typeset .chapters-intro {
+  margin: 0 0 1.5rem;
+  font-size: 1rem;
+  opacity: 0.85;
+  max-width: 65ch;
 }
 
 /* Single card --------------------------------------------------------------- */
@@ -168,14 +175,14 @@ body, .md-typeset {
 .chapter-card .meta {
   display: flex;
   flex-direction: column;
-  padding: 1.25rem 1.5rem 1.5rem;
-  gap: 0.6rem;
+  padding: 1rem 1.25rem 1.25rem;
+  gap: 0.5rem;
 }
 
 .chapter-card .number {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   background: var(--hh-grad);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -183,17 +190,17 @@ body, .md-typeset {
 }
 
 .chapter-card .title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 800;
   line-height: 1.2;
   color: var(--md-default-fg-color);
 }
 
 .chapter-card .tagline {
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 0.92rem;
+  line-height: 1.45;
   color: var(--md-default-fg-color);
-  opacity: 0.9;
+  opacity: 0.88;
 }
 
 /* Light/dark image swap ----------------------------------------------------- */
@@ -289,10 +296,10 @@ body, .md-typeset {
     gap: 1rem;
   }
   .chapter-card .meta {
-    padding: 1rem 1.1rem 1.2rem;
+    padding: 0.9rem 1rem 1.1rem;
   }
   .chapter-card .title {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
   }
   .md-typeset .lede {
     font-size: 1.1rem;

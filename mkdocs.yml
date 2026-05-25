@@ -86,11 +86,29 @@ nav:
   - Chapters:
     - chapters/index.md
     - 01 — Trustworthy AI: chapters/01-trustworthy-ai.md
-    - 02 — The Moment We're In: chapters/02-the-moment.md
-    - 03 — Human-in-the-Loop: chapters/03-human-in-the-loop.md
-    - 04 — Principles: chapters/04-principles.md
-    - 05 — Practices: chapters/05-practices.md
-    - 06 — Trust Is the Ultimate Feature: chapters/06-trust-is-the-ultimate-feature.md
+    - 02 — AI Is in the Loop: chapters/02-ai-is-in-the-loop.md
+    - 03 — Trust Is the Ultimate Feature: chapters/03-trust-is-the-ultimate-feature.md
+    - 04 — What We'll Cover: chapters/04-what-well-cover.md
+    - 05 — Part One — Human-in-the-Loop: chapters/05-part-one-human-in-the-loop.md
+    - 06 — Models Suggest. Humans Decide.: chapters/06-models-suggest-humans-decide.md
+    - 07 — Why Oversight Matters: chapters/07-why-oversight-matters.md
+    - 08 — The Loop, in Practice: chapters/08-the-loop-in-practice.md
+    - 09 — Copilot in Action: chapters/09-copilot-in-action.md
+    - 10 — Part Two — Principles: chapters/10-part-two-principles.md
+    - 11 — Three Non-Negotiables: chapters/11-three-non-negotiables.md
+    - 12 — Explainability: chapters/12-explainability.md
+    - 13 — Reliability: chapters/13-reliability.md
+    - 14 — Inclusivity: chapters/14-inclusivity.md
+    - 15 — Microsoft's Responsible AI Standard: chapters/15-responsible-ai-standard.md
+    - 16 — Trust, Shipped as Product: chapters/16-trust-shipped-as-product.md
+    - 17 — Part Three — Practices: chapters/17-part-three-practices.md
+    - 18 — Governance Without Friction: chapters/18-governance-without-friction.md
+    - 19 — Empathy in the Workflow: chapters/19-empathy-in-the-workflow.md
+    - 20 — A Practical Checklist: chapters/20-a-practical-checklist.md
+    - 21 — Measuring Trust: chapters/21-measuring-trust.md
+    - 22 — The Developer's Role: chapters/22-the-developers-role.md
+    - 23 — Build It In, Ship It on Purpose: chapters/23-build-it-in-ship-it-on-purpose.md
+    - 24 — Thank You: chapters/24-thank-you.md
   - About: about.md
 
 copyright: >
