@@ -167,6 +167,10 @@ venv.bak/
 # mkdocs documentation
 /site
 
+# Generated slide images (rendered in CI from /slides)
+/docs/assets/slides/dark/
+/docs/assets/slides/light/
+
 # mypy
 .mypy_cache/
 .dmypy.json

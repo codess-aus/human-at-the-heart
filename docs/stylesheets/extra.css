@@ -1,0 +1,315 @@
+/* ==========================================================================
+   Human at the Heart — custom styles for MkDocs Material
+   - Mona Sans typography (loaded via fonts.cdnfonts.com fallback chain)
+   - Vibrant accent gradient: pink → purple → cyan
+   - Card grid matching the talk's visual language
+   - Light / dark slide-image swap tied to Material's palette toggle
+   ========================================================================== */
+
+@import url('https://fonts.cdnfonts.com/css/mona-sans');
+
+:root {
+  --hh-pink: #FF6BCB;
+  --hh-purple: #A371F7;
+  --hh-cyan: #54AEFF;
+  --hh-green: #3FB950;
+  --hh-grad: linear-gradient(90deg, var(--hh-pink), var(--hh-purple), var(--hh-cyan));
+}
+
+/* Material palette — dark scheme (slate) */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #000000;
+  --md-default-bg-color--light: #0a0a0a;
+  --md-default-fg-color: #ffffff;
+  --md-default-fg-color--light: #ffffff;
+  --md-typeset-a-color: var(--hh-cyan);
+  --md-accent-fg-color: var(--hh-pink);
+  --hh-card-bg: #0a0a0a;
+  --hh-card-border: rgba(255, 255, 255, 0.12);
+  --hh-card-border-hover: rgba(255, 107, 203, 0.6);
+  --hh-card-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  --hh-card-shadow-hover: 0 12px 40px rgba(163, 113, 247, 0.35);
+  --hh-muted: #ffffff;
+}
+
+/* Material palette — light scheme (default) */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #ffffff;
+  --md-default-fg-color: #000000;
+  --md-typeset-a-color: #0969DA;
+  --md-accent-fg-color: #BF3989;
+  --hh-card-bg: #ffffff;
+  --hh-card-border: rgba(0, 0, 0, 0.12);
+  --hh-card-border-hover: rgba(191, 57, 137, 0.6);
+  --hh-card-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --hh-card-shadow-hover: 0 12px 32px rgba(130, 80, 223, 0.18);
+  --hh-muted: #000000;
+}
+
+/* Typography ---------------------------------------------------------------- */
+body, .md-typeset {
+  font-family: 'Mona Sans', Calibri, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 0.005em;
+}
+.md-header__title, .md-typeset h1, .md-typeset h2, .md-typeset h3 {
+  font-family: 'Mona Sans', Calibri, system-ui, sans-serif;
+  font-weight: 700;
+}
+
+/* Homepage lede ------------------------------------------------------------- */
+.md-typeset .lede {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  max-width: 60ch;
+  margin: 1rem 0 2.5rem;
+}
+
+/* Chapters section ---------------------------------------------------------- */
+.md-typeset .chapters h2,
+.md-typeset .chapter-grid + h2,
+.md-typeset .about-snippet h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-top: 2rem;
+}
+
+/* Card grid ----------------------------------------------------------------- */
+.chapter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(420px, 100%), 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0 3rem;
+  list-style: none;
+  padding: 0;
+}
+
+/* Single card --------------------------------------------------------------- */
+.chapter-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--hh-card-bg);
+  border: 1px solid var(--hh-card-border);
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none !important;
+  color: var(--md-default-fg-color) !important;
+  box-shadow: var(--hh-card-shadow);
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease,
+    border-color 200ms ease;
+  position: relative;
+  isolation: isolate;
+}
+
+.chapter-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  padding: 1px;
+  background: var(--hh-grad);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 200ms ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.chapter-card:hover,
+.chapter-card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: var(--hh-card-shadow-hover);
+  border-color: transparent;
+}
+
+.chapter-card:hover::before,
+.chapter-card:focus-visible::before {
+  opacity: 1;
+}
+
+.chapter-card:focus-visible {
+  outline: 3px solid var(--hh-purple);
+  outline-offset: 3px;
+}
+
+/* Card thumbnail (the slide as hero) --------------------------------------- */
+.chapter-card .thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000;
+  position: relative;
+}
+
+[data-md-color-scheme="default"] .chapter-card .thumb {
+  background: #fff;
+}
+
+.chapter-card .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 400ms ease;
+}
+
+.chapter-card:hover .thumb img,
+.chapter-card:focus-visible .thumb img {
+  transform: scale(1.03);
+}
+
+/* Card meta (number + title + tagline) ------------------------------------- */
+.chapter-card .meta {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 1.5rem 1.5rem;
+  gap: 0.6rem;
+}
+
+.chapter-card .number {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  background: var(--hh-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.chapter-card .title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--md-default-fg-color);
+}
+
+.chapter-card .tagline {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--md-default-fg-color);
+  opacity: 0.9;
+}
+
+/* Light/dark image swap ----------------------------------------------------- */
+[data-md-color-scheme="slate"] .thumb-light,
+[data-md-color-scheme="slate"] .hero-light {
+  display: none;
+}
+[data-md-color-scheme="default"] .thumb-dark,
+[data-md-color-scheme="default"] .hero-dark {
+  display: none;
+}
+
+/* Chapter hero slide (top of each chapter page) ---------------------------- */
+.hero-slide {
+  margin: 0 0 2rem;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--hh-card-border);
+  box-shadow: var(--hh-card-shadow);
+  position: relative;
+}
+
+.hero-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-slide figcaption,
+.inline-slide figcaption {
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  text-align: right;
+  color: var(--md-default-fg-color);
+  opacity: 0.75;
+  background: var(--hh-card-bg);
+  border-top: 1px solid var(--hh-card-border);
+}
+
+/* Inline slide (embedded within prose) ------------------------------------- */
+.inline-slide {
+  margin: 2.5rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--hh-card-border);
+  box-shadow: var(--hh-card-shadow);
+}
+
+.inline-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* About-snippet ------------------------------------------------------------ */
+.about-snippet {
+  max-width: 70ch;
+  margin: 3rem 0;
+}
+
+/* Buttons in the gradient family ------------------------------------------- */
+.md-typeset .md-button--primary {
+  background: var(--hh-grad);
+  border: none;
+  color: #ffffff !important;
+}
+.md-typeset .md-button--primary:hover,
+.md-typeset .md-button--primary:focus {
+  background: var(--hh-grad);
+  filter: brightness(1.1);
+  color: #ffffff !important;
+}
+
+/* Accessibility: respect reduced motion ------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  .chapter-card,
+  .chapter-card .thumb img,
+  .chapter-card::before {
+    transition: none;
+  }
+  .chapter-card:hover {
+    transform: none;
+  }
+  .chapter-card:hover .thumb img {
+    transform: none;
+  }
+}
+
+/* Smaller screens ---------------------------------------------------------- */
+@media (max-width: 600px) {
+  .chapter-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .chapter-card .meta {
+    padding: 1rem 1.1rem 1.2rem;
+  }
+  .chapter-card .title {
+    font-size: 1.3rem;
+  }
+  .md-typeset .lede {
+    font-size: 1.1rem;
+  }
+}
+
+/* Header polish: gradient on the site title accent ------------------------- */
+.md-header {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  border-bottom: 1px solid var(--hh-card-border);
+}
+.md-header__title {
+  font-weight: 800;
+}
+
+/* Footer ------------------------------------------------------------------- */
+.md-footer-meta {
+  background-color: var(--md-default-bg-color);
+}

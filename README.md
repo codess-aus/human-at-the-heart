@@ -4,6 +4,34 @@ Talk: **Trustworthy AI - Keeping Humans at the Heart of Intelligent Systems** (4
 
 A GitHub + Microsoft perspective on building AI that preserves human judgment, creativity, and ethics.
 
+## Companion website
+
+Every chapter of the talk is also a page on a small MkDocs Material site,
+deployed to GitHub Pages on every push to `main`. The site is responsive,
+accessibility-tested, and ships a light/dark palette toggle that also swaps the
+hero/thumbnail images between the two rendered decks.
+
+- **Live site:** https://codess-aus.github.io/human-at-the-heart/
+- **Source:** [`docs/`](docs/)
+- **Theme:** [`docs/stylesheets/extra.css`](docs/stylesheets/extra.css)
+- **Build & deploy:** [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)
+
+### Run the site locally
+
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+# One-off: render slides → docs/assets/slides/{dark,light}/*.png
+./scripts/render-slides.sh
+
+mkdocs serve
+```
+
+Open <http://127.0.0.1:8000/> and use the sun/moon toggle in the header to
+switch palette — the chapter thumbnails and hero images swap between the dark
+and light Marp decks.
+
 ## Slide decks
 
 Two accessible Marp decks, identical content, two palettes:

@@ -1,0 +1,97 @@
+site_name: Human at the Heart
+site_description: Trustworthy AI — keeping humans at the heart of intelligent systems. A GitHub + Microsoft perspective.
+site_url: https://codess-aus.github.io/human-at-the-heart/
+site_author: Master Chief Sparkle
+
+repo_url: https://github.com/codess-aus/human-at-the-heart
+repo_name: codess-aus/human-at-the-heart
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  font:
+    text: Mona Sans
+    code: JetBrains Mono
+  icon:
+    logo: material/heart-pulse
+    repo: fontawesome/brands/github
+  favicon: assets/favicon.svg
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - content.tooltips
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/codess-aus/human-at-the-heart
+  generator: false
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Chapters:
+    - chapters/index.md
+    - 01 — Trustworthy AI: chapters/01-trustworthy-ai.md
+    - 02 — The Moment We're In: chapters/02-the-moment.md
+    - 03 — Human-in-the-Loop: chapters/03-human-in-the-loop.md
+    - 04 — Principles: chapters/04-principles.md
+    - 05 — Practices: chapters/05-practices.md
+    - 06 — Trust Is the Ultimate Feature: chapters/06-trust-is-the-ultimate-feature.md
+  - About: about.md
+
+copyright: >
+  Made with care for the humans in the loop.

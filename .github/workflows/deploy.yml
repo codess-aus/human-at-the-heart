@@ -1,0 +1,90 @@
+name: Build & Deploy site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Render slides + build MkDocs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Render dark slides → PNG
+        uses: docker://marpteam/marp-cli:latest
+        with:
+          args: >-
+            slides/trustworthy-ai-dark.md
+            --images png
+            --image-scale 2
+            -o docs/assets/slides/dark/slide.png
+            --allow-local-files
+        env:
+          MARP_USER: root:root
+
+      - name: Render light slides → PNG
+        uses: docker://marpteam/marp-cli:latest
+        with:
+          args: >-
+            slides/trustworthy-ai-light.md
+            --images png
+            --image-scale 2
+            -o docs/assets/slides/light/slide.png
+            --allow-local-files
+        env:
+          MARP_USER: root:root
+
+      - name: Normalise slide filenames (slide.001.png → 001.png)
+        run: |
+          set -euo pipefail
+          for dir in docs/assets/slides/dark docs/assets/slides/light; do
+            cd "$GITHUB_WORKSPACE/$dir"
+            for f in slide.*.png; do
+              [ -e "$f" ] || continue
+              mv "$f" "${f#slide.}"
+            done
+            ls -1 | head -5
+            cd "$GITHUB_WORKSPACE"
+          done
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install MkDocs + Material
+        run: pip install -r requirements.txt
+
+      - name: Build site
+        run: mkdocs build --strict
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
