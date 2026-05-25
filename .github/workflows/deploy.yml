@@ -22,42 +22,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Render dark slides → PNG
-        uses: docker://marpteam/marp-cli:latest
-        with:
-          args: >-
-            slides/trustworthy-ai-dark.md
-            --images png
-            --image-scale 2
-            -o docs/assets/slides/dark/slide.png
-            --allow-local-files
-        env:
-          MARP_USER: root:root
-
-      - name: Render light slides → PNG
-        uses: docker://marpteam/marp-cli:latest
-        with:
-          args: >-
-            slides/trustworthy-ai-light.md
-            --images png
-            --image-scale 2
-            -o docs/assets/slides/light/slide.png
-            --allow-local-files
-        env:
-          MARP_USER: root:root
-
-      - name: Normalise slide filenames (slide.001.png → 001.png)
-        run: |
-          set -euo pipefail
-          for dir in docs/assets/slides/dark docs/assets/slides/light; do
-            cd "$GITHUB_WORKSPACE/$dir"
-            for f in slide.*.png; do
-              [ -e "$f" ] || continue
-              mv "$f" "${f#slide.}"
-            done
-            ls -1 | head -5
-            cd "$GITHUB_WORKSPACE"
-          done
+      - name: Render slides → PNG
+        run: bash scripts/render-slides.sh
 
       - name: Set up Python
         uses: actions/setup-python@v5
