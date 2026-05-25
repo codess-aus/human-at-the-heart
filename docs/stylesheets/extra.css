@@ -204,12 +204,14 @@ body, .md-typeset {
 }
 
 /* Light/dark image swap ----------------------------------------------------- */
-[data-md-color-scheme="slate"] .thumb-light,
-[data-md-color-scheme="slate"] .hero-light {
+/* Specificity has to beat `.chapter-card .thumb img` (0,2,1) — hence the
+   extra `.chapter-card .thumb` qualifier on the thumb selectors. */
+[data-md-color-scheme="slate"] .chapter-card .thumb .thumb-light,
+[data-md-color-scheme="slate"] .hero-slide .hero-light {
   display: none;
 }
-[data-md-color-scheme="default"] .thumb-dark,
-[data-md-color-scheme="default"] .hero-dark {
+[data-md-color-scheme="default"] .chapter-card .thumb .thumb-dark,
+[data-md-color-scheme="default"] .hero-slide .hero-dark {
   display: none;
 }
 
@@ -306,17 +308,10 @@ body, .md-typeset {
   }
 }
 
-/* Header polish: gradient on the site title accent ------------------------- */
-.md-header {
-  background-color: var(--md-default-bg-color);
-  color: var(--md-default-fg-color);
-  border-bottom: 1px solid var(--hh-card-border);
-}
+/* Header polish ------------------------------------------------------------ */
+/* Leave the background to Material's `primary: black` so the header is black
+   with white icons/text in both light and dark palettes — keeps the
+   sun/moon toggle visible on the light scheme. */
 .md-header__title {
   font-weight: 800;
-}
-
-/* Footer ------------------------------------------------------------------- */
-.md-footer-meta {
-  background-color: var(--md-default-bg-color);
 }

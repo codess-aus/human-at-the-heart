@@ -14,8 +14,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../01-trustworthy-ai/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/001.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/001.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/001.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/001.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">01</span>
@@ -26,8 +26,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../02-ai-is-in-the-loop/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/002.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/002.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/002.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/002.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">02</span>
@@ -38,8 +38,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../03-trust-is-the-ultimate-feature/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/003.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/003.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/003.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/003.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">03</span>
@@ -50,8 +50,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../04-what-well-cover/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/004.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/004.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/004.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/004.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">04</span>
@@ -62,8 +62,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../05-part-one-human-in-the-loop/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/005.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/005.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/005.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/005.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">05</span>
@@ -74,8 +74,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../06-models-suggest-humans-decide/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/006.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/006.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/006.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/006.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">06</span>
@@ -86,8 +86,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../07-why-oversight-matters/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/007.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/007.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/007.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/007.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">07</span>
@@ -98,8 +98,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../08-the-loop-in-practice/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/008.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/008.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/008.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/008.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">08</span>
@@ -110,8 +110,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../09-copilot-in-action/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/009.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/009.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/009.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/009.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">09</span>
@@ -122,8 +122,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../10-part-two-principles/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/010.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/010.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/010.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/010.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">10</span>
@@ -134,8 +134,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../11-three-non-negotiables/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/011.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/011.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/011.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/011.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">11</span>
@@ -146,8 +146,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../12-explainability/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/012.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/012.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/012.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/012.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">12</span>
@@ -158,8 +158,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../13-reliability/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/013.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/013.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/013.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/013.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">13</span>
@@ -170,8 +170,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../14-inclusivity/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/014.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/014.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/014.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/014.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">14</span>
@@ -182,8 +182,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../15-responsible-ai-standard/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/015.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/015.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/015.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/015.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">15</span>
@@ -194,8 +194,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../16-trust-shipped-as-product/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/016.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/016.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/016.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/016.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">16</span>
@@ -206,8 +206,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../17-part-three-practices/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/017.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/017.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/017.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/017.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">17</span>
@@ -218,8 +218,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../18-governance-without-friction/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/018.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/018.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/018.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/018.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">18</span>
@@ -230,8 +230,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../19-empathy-in-the-workflow/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/019.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/019.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/019.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/019.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">19</span>
@@ -242,8 +242,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../20-a-practical-checklist/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/020.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/020.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/020.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/020.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">20</span>
@@ -254,8 +254,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../21-measuring-trust/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/021.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/021.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/021.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/021.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">21</span>
@@ -266,8 +266,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../22-the-developers-role/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/022.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/022.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/022.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/022.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">22</span>
@@ -278,8 +278,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../23-build-it-in-ship-it-on-purpose/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/023.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/023.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/023.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/023.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">23</span>
@@ -290,8 +290,8 @@ readers rather than as speaker notes.
 
 <a class="chapter-card" role="listitem" href="../24-thank-you/">
   <span class="thumb" aria-hidden="true">
-    <img class="thumb-dark" src="../../assets/slides/dark/024.png" alt="" loading="lazy">
-    <img class="thumb-light" src="../../assets/slides/light/024.png" alt="" loading="lazy">
+    <img class="thumb-dark" src="../assets/slides/dark/024.png" alt="" loading="lazy">
+    <img class="thumb-light" src="../assets/slides/light/024.png" alt="" loading="lazy">
   </span>
   <span class="meta">
     <span class="number">24</span>
