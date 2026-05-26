@@ -1,0 +1,12 @@
+# Extends the official Marp CLI image with LibreOffice so that
+# `marp --pptx --pptx-editable` can produce truly editable PowerPoint files.
+# Marp CLI shells out to `soffice` for the HTML -> PPTX conversion.
+FROM marpteam/marp-cli:latest
+
+USER root
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends \
+        libreoffice-impress \
+        libreoffice-core \
+        fonts-dejavu \
+ && rm -rf /var/lib/apt/lists/*

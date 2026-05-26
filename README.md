@@ -60,7 +60,11 @@ npm i -g @marp-team/marp-cli
 Export to PowerPoint or PDF:
 
 ```bash
-# PowerPoint
+# PowerPoint — EDITABLE (real text shapes you can edit in PowerPoint)
+# Requires Docker; wraps Marp CLI + LibreOffice so --pptx-editable works.
+./scripts/export-pptx.sh
+
+# PowerPoint — image-only (each slide is a single PNG; NOT editable)
 marp slides/trustworthy-ai-dark.md --pptx
 marp slides/trustworthy-ai-light.md --pptx
 
@@ -71,6 +75,15 @@ marp slides/trustworthy-ai-light.md --pdf --allow-local-files
 # HTML preview
 marp slides/trustworthy-ai-dark.md --html
 ```
+
+> **Why a script for `.pptx`?** Marp's default `--pptx` output embeds each slide
+> as a single background image, so the text is not editable in PowerPoint.
+> Marp's experimental `--pptx-editable` flag produces real shapes and text but
+> depends on LibreOffice. [`scripts/export-pptx.sh`](scripts/export-pptx.sh)
+> builds a small Docker image ([`scripts/Dockerfile.marp-editable`](scripts/Dockerfile.marp-editable))
+> that bundles both, then re-exports both decks. Heavy custom CSS (gradient
+> text, web fonts) may render slightly differently than the Marp preview — this
+> is an experimental Marp feature.
 
 Or install the [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) extension to preview live as you edit.
 
